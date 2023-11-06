@@ -55,6 +55,78 @@ video {
   vertical-align: middle;
 }
 
-.row {
-  box-sizing: border-box;
+header {
+  height: 828px;
+  padding: 1px;
+  background: url(/img/bckg-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .container {
+  margin: 40px;
+  display: flex;
+  align-content: space-between;
+}
+
+.logo {
+  margin: 0;
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: left;
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 100% */
+  text-transform: uppercase;
+}
+
+.nav-line {
+  display: flex;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .nav-line {
+    display: none;
+  }
+}
+
+.nav-line p{
+  margin: auto 26px;
+  color: white;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.nav-line .button-reserve {
+  margin: auto ;
+  padding: 8px 27px;
+  border-radius: 3px;
+  border: 2px solid #FFF;
+}
+
+.nav-burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-burger .burger-line {
+  margin: 7px 0;
+  width: 40px;
+  height: 7px;
+  border-radius: 1px;
+  background: white;
+}
+
+
+
+@media (min-width: 576px) {
+  .nav-burger {
+    display: none;
+  }
 }
