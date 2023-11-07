@@ -57,16 +57,19 @@ video {
 
 header {
   height: 828px;
-  padding: 1px;
   background: url(/img/bckg-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  box-sizing:content-box;
 }
 
-header .container {
-  margin: 40px;
+header .container-header {
+  width: 100%;
+  padding: 40px;
+  margin: 0;
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -86,16 +89,20 @@ header .container {
   color: white;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .nav-line {
     display: none;
   }
+  .logo-header {
+    font-size: 13px;
+  }
 }
 
-.nav-line p{
+.nav-line a{
   margin: auto 26px;
+  text-decoration: none;
   color: white;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -103,11 +110,20 @@ header .container {
   text-transform: capitalize;
 }
 
+.nav-line a:hover{
+  color: grey;
+}
+
+
 .nav-line .button-reserve {
   margin: auto ;
   padding: 8px 27px;
   border-radius: 3px;
   border: 2px solid #FFF;
+}
+
+.nav-line .button-reserve:hover {
+  border: solid grey 2px;
 }
 
 .nav-burger {
@@ -125,7 +141,7 @@ header .container {
 
 
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .nav-burger {
     display: none;
   }
