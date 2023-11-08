@@ -3,22 +3,12 @@
 // ==================================== */
 
 :root {
+  --bouton-fond:#FFF
 }
 
 
 
 
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^=col-] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(86, 61, 124, .2);
-}
 
 /* ====================================
 // reset rules
@@ -187,9 +177,108 @@ header .section-citation .citation-credit {
 }
 
 header .background-bottom-interaction {
-  width: 70vw;
+  width: 85vw;
   height: 05vh;
   background: white;
   border-radius: 10px 10px 0 0;
 }
 
+main h2 {
+  margin-bottom: 30px;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.49%; /* 31.217px */
+  letter-spacing: 1.4px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 1020px) {
+  main h2 {
+    text-align: left;
+  }
+}
+
+main .card {
+  padding: 80px 0;
+}
+
+@media (min-width: 1020px) {
+  main .card {
+    padding: 0 4px;
+  }
+}
+
+main .img-card {
+  border-radius: 10px;
+  height: 30vh;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
+
+@media (min-width: 1020px) {
+  main .img-card {
+    height: 290p;
+  }
+}
+
+main .menu .first-menu-card-img {
+  background: url("../img/chat-table-soupe.jpg");
+}
+
+main .menu .second-menu-card-img {
+  background: url("../img/chat-cafe.jpg");
+}
+
+main .cat .first-cat-card-img {
+  background: url("../img/chat-tigré-noir-gris-blanc.jpg");
+}
+
+main .cat .second-cat-card-img {
+  background: url("../img/chat-roux-blanc.jpg");
+}
+
+main .cat .third-cat-card-img {
+  background: url("../img/chat-noir-roux.jpg");
+}
+
+main .cat .fourth-cat-card-img {
+  background: url("../img/chat-blanc.jpg");
+}
+
+main .cat .fifth-cat-card-img {
+  background: url("../img/chat-long-poil.jpg");
+}
+
+main .cat .sixth-cat-card-img {
+  background: url("../img/chat-noir-roux.jpg");
+}
+
+
+main .button-card {
+  padding: 10px 20px;
+  background: var(--bouton-fond);
+  border: 0;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transition: all 0.1s;
+}
+
+main .button-card:hover {
+  background: #a5a5a5;
+}
+
+@media (min-width: 1020px) {
+  main .button-card {
+    bottom: 40px;
+    left: 40px;
+  }
+}
+
+main .menu {
+  margin: 80px 0;
+}
