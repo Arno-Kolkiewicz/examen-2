@@ -56,14 +56,18 @@ video {
 }
 
 header {
-  height: 828px;
-  background: url(/img/bckg-header.jpg);
+  height: 100vh;
+  background: url("../img/bckg-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   box-sizing:content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header .container-header {
+header .container-header-nav-logo {
   width: 100%;
   padding: 40px;
   margin: 0;
@@ -89,12 +93,13 @@ header .container-header {
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1020px) {
   .nav-line {
     display: none;
   }
   .logo-header {
-    font-size: 13px;
+    font-size: 26px;
+    line-height: 25px;
   }
 }
 
@@ -132,17 +137,59 @@ header .container-header {
 }
 
 .nav-burger .burger-line {
-  margin: 7px 0;
+  margin: 4px 0;
   width: 40px;
   height: 7px;
   border-radius: 1px;
   background: white;
 }
 
-
-
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .nav-burger {
     display: none;
   }
 }
+
+header .section-citation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+header .section-citation .container-citation {
+  margin: auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .section-citation p {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 2px 6px rgba(18, 18, 18, 0.50);
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1020px) {
+  header .citation {
+    font-size: 42px;
+  }
+}
+
+header .section-citation .citation-credit {
+  font-size: 10px;
+  align-self: flex-end;
+}
+
+header .background-bottom-interaction {
+  width: 70vw;
+  height: 05vh;
+  background: white;
+  border-radius: 10px 10px 0 0;
+}
+
