@@ -210,6 +210,10 @@ main .card {
   }
 }
 
+main .card-margin-bottom {
+  margin: 0 0 24px 0;
+}
+
 main .img-card {
   border-radius: 10px;
   height: 30vh;
@@ -281,4 +285,36 @@ main .button-card:hover {
 
 main .menu {
   margin: 80px 0;
+}
+
+main .contact-horaire-img {
+  background: url("../img/plan-paris.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .contact-horaire-bckg {
+  background: white;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+main .titel-align-center {
+  text-align: center;
+}
+
+main .contact-horaire .horaire {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 200px 0;
+}
+
+main .contact-horaire .horaire-jour, .horaire-heure {
+  margin: 15px;
+  list-style: none;
+  text-align: left;
 }
