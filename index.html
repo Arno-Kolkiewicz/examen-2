@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inter:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </head>
   <body>
     <header class="header">
@@ -40,21 +44,17 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="menu">
+            <div class="section section-menu">
               <h2>nos menu</h2>
               <div class="row">
                 <div class="col-xl-6 col-12">
-                  <div class="card">
-                    <div class="img-card first-menu-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card img-card first-menu-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
                 <div class="col-12 col-xl-6">
-                  <div class="card">
-                    <div class="img-card second-menu-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card img-card second-menu-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
               </div>
@@ -63,53 +63,41 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <div class="cat">
+            <div class="section section-cat">
               <h2>nos chat</h2>
               <div class="row">
                 <div class="col-12 col-xl-6">
-                  <div class="card card-margin-bottom">
-                    <div class="img-card first-cat-card-img ">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card card-margin-bottom img-card first-cat-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
                 <div class="col-12 col-xl-6">
-                  <div class="card card-margin-bottom">
-                    <div class="img-card second-cat-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card card-margin-bottom img-card second-cat-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12 col-xl-5">
-                  <div class="card card-margin-bottom">
-                    <div class="img-card third-cat-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card card-margin-bottom img-card third-cat-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
                 <div class="col-12 col-xl-7">
-                  <div class="card card-margin-bottom">
-                    <div class="img-card fourth-cat-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card card-margin-bottom img-card fourth-cat-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-12 col-xl-7">
-                  <div class="card card-margin-bottom">
-                    <div class="img-card fifth-cat-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card card-margin-bottom img-card fifth-cat-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
                 <div class="col-12 col-xl-5">
-                  <div class="card card-margin-bottom">
-                    <div class="img-card sixth-cat-card-img">
-                      <button class="button-card">voir le produit</button>
-                    </div>
+                  <div class="card card-margin-bottom img-card sixth-cat-card-img">
+                    <button class="button-card">Voir le produit</button>
                   </div>
                 </div>
               </div>
@@ -117,7 +105,7 @@
           </div>
         </div>
       </div>
-      <div class="contact-horaire contact-horaire-img">
+      <div class="section section-contact-horaire contact-horaire-img">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-5">
@@ -159,15 +147,55 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="regle">
-              dans le repspect
+            <div class="section section-rules">
+              <h2 class="titel-align-center">dans le respect !</h2>
+              <p>
+                Nos chats sont ici chez eux, vous êtes entrés dans la maison des chats, ainsi quand ils vaquent à leurs 
+                occupations quotidiennes il ne faut surtout pas les déranger, particulièrement lorsque ils dorment.
+              </p>
             </div>
+            <a href="#" class="button-reserve button-reserve button-margin-bottom">réserver</a>
           </div>
         </div>
-      </main>
-    </div>
-      <footer>
-        footer
-      </footer>
+      </div>
+    </main>
+    <footer>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <span>100% fait maison avec des produits frais :)</span>
+          <span>100% fait maison avec des produits frais :)</span>
+          <span>100% fait maison avec des produits frais :)</span>
+          <span>100% fait maison avec des produits frais :)</span>
+        </div>
+      </div>
+      <div class="container-img">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="img/instagram-logo.svg" alt="logo de instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="img/facebook-logo.svg" alt="logo de facebook">
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank">
+          <img src="img/whatsapp-logo.svg" alt=" logo de whatsapp">
+        </a>
+      </div>
+    </footer>
+    <hr>
+
+
+    <h1>Carousel</h1>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>	
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="carousel-prev">prev</div>
+			<div class="carousel-next">next</div>
+		</div>
+
+		<script src="js/main.js" type="module"></script>
+
     </body>
     </html>

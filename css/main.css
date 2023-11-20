@@ -3,7 +3,7 @@
 // ==================================== */
 
 :root {
-  --bouton-fond:#FFF
+  --bouton-fond:#FFF;
 }
 
 
@@ -22,6 +22,8 @@
 
 html {
   font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
 }
 
 body {
@@ -36,6 +38,7 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
@@ -93,32 +96,34 @@ header .container-header-nav-logo {
   }
 }
 
+header .menu-active {
+  display: inline-block;
+}
+
 .nav-line a{
   margin: auto 26px;
-  text-decoration: none;
   color: white;
   font-family: "Inter";
   font-size: 25px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: capitalize;
+  border-color: white;
 }
 
 .nav-line a:hover{
   color: grey;
+  border-color: grey;
 }
 
-
-.nav-line .button-reserve {
-  margin: auto ;
+.button-reserve {
   padding: 8px 27px;
   border-radius: 3px;
-  border: 2px solid #FFF;
-}
-
-.nav-line .button-reserve:hover {
-  border: solid grey 2px;
+  border: 2px solid #000000;
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
 }
 
 .nav-burger {
@@ -183,6 +188,10 @@ header .background-bottom-interaction {
   border-radius: 10px 10px 0 0;
 }
 
+.section {
+  margin-bottom: 100px;
+}
+
 main h2 {
   margin-bottom: 30px;
   font-family: Inter;
@@ -200,66 +209,57 @@ main h2 {
   }
 }
 
+main .img-card {
+  border-radius: 10px;
+  height: 30vh;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
 main .card {
-  padding: 80px 0;
+  margin: 0 0 24px 0;
 }
 
 @media (min-width: 1020px) {
   main .card {
-    padding: 0 4px;
+    height: 290px;
+    margin: 0 0 24px 0;
   }
 }
 
-main .card-margin-bottom {
-  margin: 0 0 24px 0;
-}
-
-main .img-card {
-  border-radius: 10px;
-  height: 30vh;
-  background-size: 100% !important;
-  background-repeat: no-repeat !important;
-  position: relative;
-}
-
-@media (min-width: 1020px) {
-  main .img-card {
-    height: 290p;
-  }
-}
-
-main .menu .first-menu-card-img {
+main .section-menu .first-menu-card-img {
   background: url("../img/chat-table-soupe.jpg");
 }
 
-main .menu .second-menu-card-img {
+main .section-menu .second-menu-card-img {
   background: url("../img/chat-cafe.jpg");
 }
 
-main .cat .first-cat-card-img {
+main .section-cat .first-cat-card-img {
   background: url("../img/chat-tigré-noir-gris-blanc.jpg");
 }
 
-main .cat .second-cat-card-img {
+main .section-cat .second-cat-card-img {
   background: url("../img/chat-roux-blanc.jpg");
 }
 
-main .cat .third-cat-card-img {
+main .section-cat .third-cat-card-img {
   background: url("../img/chat-noir-roux.jpg");
 }
 
-main .cat .fourth-cat-card-img {
+main .section-cat .fourth-cat-card-img {
   background: url("../img/chat-blanc.jpg");
 }
 
-main .cat .fifth-cat-card-img {
+main .section-cat .fifth-cat-card-img {
   background: url("../img/chat-long-poil.jpg");
 }
 
-main .cat .sixth-cat-card-img {
+main .section-cat .sixth-cat-card-img {
   background: url("../img/chat-noir-roux.jpg");
 }
-
 
 main .button-card {
   padding: 10px 20px;
@@ -296,9 +296,6 @@ main .contact-horaire-img {
 
 main .contact-horaire-bckg {
   background: white;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
   text-transform: uppercase;
   padding: 30px;
 }
@@ -307,14 +304,106 @@ main .titel-align-center {
   text-align: center;
 }
 
-main .contact-horaire .horaire {
+main .section-contact-horaire .horaire {
   display: flex;
   justify-content: center;
   margin: 0 0 200px 0;
 }
 
-main .contact-horaire .horaire-jour, .horaire-heure {
+main .section-contact-horaire .horaire-jour, .horaire-heure {
   margin: 15px;
   list-style: none;
   text-align: left;
+}
+
+main .button-margin-bottom {
+  margin: 0 0 100px 0;
+}
+
+footer {
+  padding: 20px 40px;
+  color: white;
+  background-color: black;
+
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+footer .carousel {
+  overflow: hidden;
+  width: 1000px;
+}
+.carousel-inner {
+  display: flex;
+}
+
+footer .carousel span {
+  margin-right: 100px;
+  flex-shrink: 0;
+  font-size: 24px;
+  animation: scroll 10s infinite linear;
+}
+
+footer .container-img img {
+  padding: 0 20px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+.swiper-container {
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-slide {
+	padding: 100px;
+	text-align: center;
+	background: linear-gradient(90deg, #fcd5ce 0%, #f8edeb 100%);
+}
+
+.swiper-slide h2 {
+	margin-bottom: 25px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #ff0000;
+}
+
+
+
+
+
+
+
+.carousel-prev,
+.carousel-next {
+	position: absolute;
+	top: 10px;
+	font-size: 30px;
+	z-index: 10;
+	cursor: pointer;
+} 
+
+.carousel-prev {
+	left: 20px;
+} 
+
+.carousel-next {
+	left: 80px;
 }
