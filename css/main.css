@@ -80,6 +80,7 @@ header .container-header-nav-logo {
 .nav-line {
   display: flex;
   color: white;
+  transition: all 2s;
 }
 
 @media (max-width: 1020px) {
@@ -375,10 +376,6 @@ footer .container-img img {
   }
 }
 
-
-
-
-
 .swiper-container {
 	margin: 0 auto;
   overflow: hidden;
@@ -388,10 +385,6 @@ footer .container-img img {
 .swiper-slide {
 	text-align: center;
 }
-
-
-
-
 
 .carousel-prev,
 .carousel-next {
